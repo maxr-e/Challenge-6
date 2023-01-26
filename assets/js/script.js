@@ -8,7 +8,7 @@ initMovieList();
 initWikipedia();
 
 function renderMovies(){
-    $("#list-of-movies").empty();
+    $("#list-of-cities").empty();
     $("#movie-name").val("");
     
     for (i=0; i<movieList.length; i++){
@@ -16,7 +16,7 @@ function renderMovies(){
         a.addClass("button is-inline px-4 m-4 movie");
         a.attr("data-name", movieList[i]);
         a.text(movieList[i]);
-        $("#list-of-movies").prepend(a);
+        $("#list-of-cities").prepend(a);
     } 
 }
 // This function pulls the movie list array from local storage
