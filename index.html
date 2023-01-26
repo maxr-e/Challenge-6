@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Weather Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
 
+<body>
+    
+  <header class="section">
+   <section class="hero is-primary">
+      <div class="hero-body">
+      <p class="title">
+        Weather Dashboard
+      </p>
+      </div>
+    </section>
+  </header>
+
+  <section class="container">
+    <hr/>
+    <!--city search element -->
+    <div class="control py-4 "> Search for a city: <input class="input is-focused is-rounded is-inline" id="movie-name" type="text" placeholder=" "> 
+        <button class="button is-inline is-rounded search-btn">Search</button>
+    </div>
+    <!-- recent search element -->
+    <div class="py-4" >
+        <p class="is-inline">Recent Searches:</p><span class="is-inline" id="list-of-cities"> </span>
+    </div>
+    <hr/>
+    <!--city data from weather API-->
+    <div class="columns">
+      <div class="column">
+        <!--display director(s) element-->
+        <div class="control py-4 ">  Director(s):   <a class="button">Anchor placeholders</a>
+        </div>
+        <!--display main actor/actress element-->
+        <div class="control py-4 ">  Main Actor/Actress:   <a class="button">Anchor placeholders</a> 
+        </div>
+        <!--display movie year element-->
+        <div class="control py-4 ">  Year:   <a class="button">Anchor placeholders</a>
+        </div>
+        <!--display movie genre element-->
+        <div class="control py-4 ">  Genre:   <a class="button">Anchor placeholders</a>
+        </div>
+      </div>
+      <div class="column">
+        Placeholder for person name and bio
+        <div class="control py-4 "><a class="button">Anchor placeholder - Bio</a>
+        </div>
+      </div>
+
+    </div>
+  </section> 
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        Webapp designed by the . The source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+      </p>
+    </div>
+ 
+    <script
+      src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+      integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+      crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./assets/js/script.js"></script>
+   </footer>
+
+</body>
+</html>
